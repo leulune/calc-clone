@@ -1,0 +1,149 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #5b5a5af5, #000000)
+}
+
+.greeting {
+    text-align: center;
+    color: rgba(232, 231, 231, 0.838);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.reduction {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.display {
+    background-color: #000;
+    border: 2px solid rgba(47, 44, 44, 0.838);
+    border-radius: 35px;
+    box-sizing: border-box;
+    height: 500px;
+    max-width: 253px;
+    display: inline-block;
+    color: #fdfdfd;
+    padding: 15px;
+    box-shadow: 1px 2px 3px black;
+}
+
+.calc {
+    margin: 0 auto;
+    font-size: 4em;
+    font-weight: 140;
+    width: 220px;
+    align-items: center;
+    padding-right: 5px;
+    position: fixed;
+    z-index: 1;
+    color: #fdfdfd;
+    margin-top: 115px;
+    margin-left: 8px;
+    display: inline;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac opr percent dvs"
+    "seven eight nine multipl"
+    "four five six minus"
+    "one two three plus"
+    "zero zero comma equal";
+    grid-gap: 6px;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.btn {
+    border: 0;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 180px;
+    background-color: #323132;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    color: #fdfdfd;
+    z-index: 10;
+}
+
+.btn.bg-lgrey {
+    background-color: hsl(0, 0%, 64%);
+    color: #000;
+} 
+.btn.bg-lgrey {
+    font-size: 16px;
+}
+
+.btn.bg-dgrey {
+    font-weight: 600;
+}
+.btn.bg-dgrey {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.btn.bg-orange {
+    background-color: #fb9c0c;
+    font-size: 25px;
+}
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 38px;
+    text-indent: -60px;
+    grid-column: 3 / 0;
+}
+
+.btn:hover {
+    filter: brightness(125%);
+}
+
+.btn:active {
+    filter: brightness(90%);
+}
+
+
+/* calculator colors from iphone:
+1. фавикон - изменение рисунка в титле (чекнуть как изменить)
+colors:
+bg (black) = #000;
+white = #fdfdfd;
+
+buttons: 
+button1(light gray) +text(black) = #a2a2a2
+button2(dark gray) +text(white) = #323132
+button3(orange) +text(white) = #fb9c0c
+*/
